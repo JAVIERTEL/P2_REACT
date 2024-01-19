@@ -1,33 +1,21 @@
-.App {
+#main{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+#cabecera {
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
+.mensaje {
   color: #61dafb;
+  margin-left: 20px;
 }
-
+.logo {
+  width: 70px;
+  animation: App-logo-spin infinite 20s linear;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +24,63 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-container > div {
+  
+  width:400px;
+  padding: 10px;
+  margin-bottom:20px; 
+  height:150px;
+  border :2px solid rgb(4, 0, 255);
+}
+#buscar {
+  width:350px;
+}
+#filtrar {
+  width:350px;
+}
+.unproducto{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin-bottom:20px; 
+
+}
+.description {
+  white-space: nowrap;      /* Evita el salto de línea */
+  overflow: hidden;         /* Oculta el contenido que desborda */
+  text-overflow: ellipsis;  /* Agrega puntos suspensivos (...) cuando se corta el texto */
+  max-width: 100%;          /* Establece el ancho máximo del contenedor */
+}
+/* styles.css o ProductList.css */
+.custom-card-body {
+  background-color: #282c34;
+  color: white; /* Texto blanco */
+  padding: 15px; /* Espaciado interno */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 6); /* Sombra de texto blanca */
+
+}
+.flex-container-2 > div{
+  display:flew;
+  flex-direction:row;
+  justify-items:end;
+  margin-right: 100px;
+}
+#description2{
+  display:flew;
+  flex-direction:row;
+  justify-items:end;
+  margin-right: 100px;
+  width: 200px; /* Establece el ancho máximo para la descripción */
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  overflow: hidden; /* Oculta cualquier contenido que desborde del ancho especificado */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto truncado */
+}
+
+
+
